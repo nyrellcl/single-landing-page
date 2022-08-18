@@ -1,0 +1,285 @@
+//mobile
+
+
+//tablet
+@media screen and (max-width: 768px){
+    .nav{
+        width: 90%;
+        margin: 34px 40px 64px;
+    }
+
+    .design-title{
+        width: 90%;
+        height: 138px;
+        margin: 64px 40px;
+        h1{
+            width: inherit;
+            height: 55px;
+            font-size: 44px;
+        }
+        p{
+            width: 573px;
+            height: 56px;
+        }
+    }
+
+    .grid-container{
+        height: auto;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(3, 0.5fr);
+        grid-template-areas: 
+        "graphic graphic UI apps"
+        "graphic graphic illustrations illustrations"
+        "photography photography motion motion";
+        width: 690px;
+        margin: 64px 39px 120px;
+        #graphic{
+            grid-area: graphic;
+            width: 333px;
+            img{
+                left: 181px;
+            }
+        }
+        #UI{
+            grid-area: UI;
+            width: 154px;
+            height: 182px
+            img{
+                left: 69px;
+            }
+        }
+        #apps{
+            grid-area: apps;
+            width: 154px;
+            height: 182px
+            img{
+                left: 69px;
+            }
+        }
+        #illustrations{
+            grid-area: illustrations;
+            width: auto;
+            height: 158px;
+            img{
+                left: 186px;
+            }
+        }
+        #photography{
+            grid-area: photography;
+            width: 333px;
+            height: 182px;
+            img{
+                left: 149px;
+            }
+        }
+        #motion{
+            grid-area: motion;
+            width: auto;
+            height: 182px;
+            img{
+                left: 181px;
+                top: 24px;
+                right: 24px;
+            }
+            .grid-container-card-name{
+                top: 128px;
+            }
+        }
+    }
+
+    //amy
+    .intro-container{
+        width: 90%;
+        margin: 120px 40px;
+        gap: 69px;
+        .amy-profile{
+            img{
+                width: 364px;
+                height: 364px;
+            }
+        }
+        &__content{
+            width: 339px;
+            height: auto;
+            gap: 24px;
+            h2{
+                width: 339px;
+                height: 120px;
+                font-size: 32px;
+                margin-bottom: 24px;
+            }
+            p{
+                width: 339px;
+                height: 140px;
+
+            }
+            .btn-consultation{
+                height: 56px;
+            }
+        }
+    }
+
+    #book{
+        .book-content-container{
+            width: 90%;
+            margin: 120px 39px 56px;
+            flex-direction: column;
+            text-align: center;
+            .content{
+                h3{
+                    font-size: 32px;
+                    width: 540px;
+                    height: 40px;
+                }
+                p{
+                    width: 540px;
+                    height: 84px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 414px){
+    .nav{
+        width: 90%;
+        margin: 16px auto 32px;
+    }
+    .design-title{
+        width: 90%;
+        text-align: center;
+        height: 210px;
+        margin: 32px auto;
+        h1{
+            width: 90%;
+            font-size: 36px;
+            line-height: 45.36px;
+            margin-bottom: 16px;
+           
+        }
+        p{
+            width: 285px;
+            font-size: 16px;
+            line-height: 26px;
+            height: 104px;
+            
+        }
+    }
+    .grid-container{
+        width: 343px;
+        margin: 0 auto;
+        height: auto;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(6, 0.5fr);
+        grid-template-areas: 
+            "graphic graphic"
+            "graphic graphic"
+            "UI apps"
+            "illustrations illustrations"
+            "photography photography"
+            "motion motion";
+        #graphic{
+                grid-area: graphic;
+                width: auto;
+                height: 364px;
+            }
+        #UI{
+                grid-area: UI;
+                width: 159px;
+                height: 182px;
+            }
+        #apps{
+                grid-area: apps;
+                width: 159px;
+                height: 182px;
+            }
+        #photography{
+                grid-area: photography;
+                width: 343px;
+                height: 158px;
+                .grid-container-card-name{
+                    top: 104px;
+                }
+            }
+        #illustrations{
+                grid-area: illustrations;
+                width: 343px;
+                height: 158px;
+            }
+        #motion{
+                grid-area: motion;
+                width: 343px;
+                height: 158px;
+                .grid-container-card-name{
+                    top: 104px;
+                }
+            }
+        }
+        .intro-container{
+            flex-direction: column;
+            align-items: center;
+            margin: 100px auto;
+            text-align: center;
+            gap: 40px;
+            .amy-profile{
+                img{
+                    width: 300px;
+                    height: 300px;
+                }
+            }
+            &__content{
+                align-items: center;
+                h2{
+                    font-size: 26px;
+                    height: 66px;
+                    line-height: 32.76px;
+                    width: 343px;
+                }
+                p{
+                    height: 104px;
+                    font-size: 16px;
+                    width: 343px;
+                }
+            }
+        }
+
+        .work{
+            h3{
+                width: 102px;
+                height: 30px;
+                font-size: 24px;
+                margin: 0 auto;
+            }
+        }
+        .image-slider-container{
+            width: 90%
+        }
+
+        #book{
+            .book-content-container{
+                width: 90%;
+                flex-direction: column;
+                margin: 100px 17px 40px;
+                height: auto;
+                .content{
+                    width: 295px;
+                    height: 255px;
+                    text-align: center;
+                    align-items: center;
+                    h3{
+                        width: 240px;
+                        height: 33px;
+                        font-size: 26px;
+                        margin: 0 auto;
+                    }
+                    p{
+                        width: 295px;
+                        height: 130px;
+                    }
+                }
+                .btn-consultation{
+                    margin: 24px 84px 48px;
+                }
+            }
+        }
+    }

@@ -1,0 +1,16 @@
+@import "./family";
+
+*, *::before, *::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+body{
+    font-family: $jakarta, $sans;
+    background-color: #F2F2F2;
+}

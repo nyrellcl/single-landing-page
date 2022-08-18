@@ -1,0 +1,354 @@
+@import "./base/base";
+
+@import "./variables/variables";
+
+@import "./placeholder/placeholder";
+
+.nav{
+    width: 80%;
+    margin: 34px 164px 66px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &__btn{
+        .btn-consultation{
+            @extend %consult;
+            background-color: $black;
+            font-family: $jakarta, $sans;
+            transition: all 250ms ease-in;
+            &:hover{
+                cursor: pointer;
+                background-color: $galactic-blue;
+            }
+        }
+    }
+}
+
+.design-title{
+    width: 52%;
+    height: 150px;
+    text-align: center;
+    margin: 66px 344px 80px;
+    display: flex;
+    flex-direction: column;
+    gap: 23px;
+    align-items: center;
+    h1{
+        font-size: 56px;
+        font-weight: 700;
+        line-height: 70.56px;
+        width: 751px;
+    }
+    p{
+        width: 730px;
+        height: 56px;
+        font-weight: 500;
+        line-height: 28px;
+        font-size: 18px;
+        color: $med-brown;
+    }
+}
+
+.grid-container-card-name{
+    p{
+        font-size: 24px;
+        font-weight: 700;
+    }
+}
+
+.grid-container{
+    width: 80%;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    height: 364px;
+    grid-template-columns: repeat(6, 0.1fr);
+    grid-gap: 24px;
+    grid-template-rows: repeat(2, 0.3fr);
+    grid-template-areas: 
+    "graphic graphic UI apps photography photography"
+    "graphic graphic illustrations illustrations motion motion";
+    margin: 80px 165px 136px;
+    color: #fff;
+    #graphic{
+        background-color: $galactic-blue;
+        border-radius: 8px;
+        width: 354px;
+        grid-area: graphic;
+        position: relative;
+        height: 364px;
+        img{
+            position: absolute;
+            width: auto;
+            height: auto;
+            left: 202px;
+            top: 24px;
+            right: 24px;
+            bottom: 148px;
+        }
+        .grid-container-card-name{
+            position: absolute;
+            left: 24px;
+            bottom: 24px;
+            right: 120px;
+            top: 310px;
+        }
+
+    }
+
+    #UI{
+        grid-area: UI;
+        width: 164px;
+        height: 182px;
+        background-color: $summer;
+        border-radius: 8px;
+        position: relative;
+        img{
+            position: absolute;
+            top: 24px;
+            right: 24px;
+            bottom: 94px;
+            left: 76px;
+        }
+        .grid-container-card-name{
+            position: absolute;
+            left: 24px;
+            bottom: 24px;
+            right: 58px;
+            top: 128px;
+        }
+    }
+
+    #apps{
+        grid-area: apps;
+        width: 164px;
+        height: 182px;
+        background-color: $pink;
+        border: 8px;
+        position: relative;
+        border-radius: 8px;
+        img{
+            position: absolute;
+            top: 24px;
+            right: 24px;
+            bottom: 94px;
+            left: 76px;
+        }
+        .grid-container-card-name{
+            position: absolute;
+            left: 24px;
+            bottom: 24px;
+            right: 58px;
+            top: 128px;
+        }
+    }
+
+    #photography{
+        grid-area: photography;
+        width: 354px;
+        height: 182px;
+        background-color: $cyan;
+        border-radius: 8px;
+        position: relative;
+        img{
+            position: absolute;
+            top: 24px;
+            right: 24px;
+            left: 170px;
+            bottom: 94px;
+        }
+        .grid-container-card-name{
+            position: absolute;
+            left: 24px;
+            bottom: 24px;
+            right: 58px;
+            top: 128px;
+        }
+        
+    }
+
+    #illustrations{
+        grid-area: illustrations;
+        width: 354px;
+        height: 158px;
+        background-color: $light-red;
+        border-radius: 8px;
+        position: relative;
+        img{
+            position: absolute;
+            top: 24px;
+            right: 24px;
+            bottom: 70px;
+            left: 200px;
+
+        }
+        .grid-container-card-name{
+            position: absolute;
+            left: 24px;
+            bottom: 24px;
+            right: 168px;
+            top: 104px;
+        }
+    }
+
+    #motion{
+        grid-area: motion;
+        width: 354px;
+        height: 158px;
+        background-color: $wine;
+        border-radius: 8px;
+        position: relative;
+        img{
+            position: absolute;
+            top: 24px;
+            right: 24px;
+            bottom: 70px;
+            left: 202px;
+        }
+        .grid-container-card-name{
+            position: absolute;
+            left: 24px;
+            bottom: 24px;
+            right: 103px;
+            top: 104px;
+        }
+    }
+}
+
+//amy
+.intro-container{
+    width: 80%;
+    margin: 136px 165px 88px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 125px;
+    .amy-profile{
+        img{
+            width: 445px;
+            height: 445px;
+        }
+    }
+    &__content{
+        width: 540px;
+        height: 306px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 34px;
+        h2{
+            height: 100px;
+            font-size: 40px;
+            font-weight: 700;
+            color: $black;
+            line-height: 50px;
+        }
+        p{
+            height: 84px;
+            font-size: 18px;
+            line-height: 28px;
+            color: $med-brown;
+        }
+        .btn-consultation{
+            @extend %consult;
+            background-color: $light-red;
+            transition: all 250ms ease-in;
+            &:hover{
+                cursor: pointer;
+                background-color: $galactic-blue;
+            }
+        }
+    }
+}
+
+.work{
+    margin: 0 auto 56px;
+    text-align: center;
+    width:50%;
+    height: 40px;
+    font-size: 32px;
+    color: $black;
+    font-weight: 700;
+}
+
+.image-slider-container{
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+    height: auto;
+    &__slide{
+        display: flex;
+        width: 100%;
+        gap: 30px;
+        img{
+            border-radius: 8px;
+        }
+    }
+}
+
+#book{
+    .book-content-container{
+        width: 80%;
+        margin: 88px 165px 56px;
+        height: 320px;
+        border-radius: 10px;
+        background-color: $black;
+        color: $light-cream;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        .content{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 25px;
+           h3{
+               width: 540px;
+               height: 50px;
+               font-size: 40px;
+               font-weight: 700;
+           }
+           p{
+               width: 540px;
+               height: 84px;
+               font-weight: 500;
+               font-size: 18px;
+               line-height: 28px;
+           }
+        }
+        .btn-consultation{
+            @extend %consult;
+            background-color: $light-red;
+            transition: all 250ms ease-in;
+            &:hover{
+                cursor: pointer;
+                background-color: $summer;
+            }
+        }
+    }
+}
+
+.btn-container{
+    position: relative;
+    width: 144px;
+    height: 64px;
+    margin: 0 auto;
+    #prevBtn{
+        position: absolute;
+        top: 50%;
+        z-index: 10;
+        left: 0;
+        cursor: pointer;
+        @extend %img-slide-btn;
+    }
+    #nextBtn{
+        position: absolute;
+        top: 50%;
+        z-index: 10;
+        right: 0;
+        cursor: pointer;
+        @extend %img-slide-btn;
+    }
+}
+
+@import "./media/media";
