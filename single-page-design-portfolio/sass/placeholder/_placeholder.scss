@@ -1,0 +1,25 @@
+@import './colors';
+
+%consult{
+    width: 228px;
+    height: 56px;
+    border-radius: 28px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 28px;
+    border: none;
+    color: #fff;
+}
+
+%img-slide-btn{
+    width: 64px;
+    height: 64px;
+    background-color: black;
+    color: #fff;
+    border-radius: 50%;
+    border: none;
+    transition: all 250ms ease-in;
+    &:hover{
+        background-color: $galactic-blue;
+    }
+}

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="keywords" content="HTML, CSS, SASS, SCSS, JavaScript, Front-End Engineer, Web Development">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <link rel="stylesheet" href="./sass/styles.css">
+  <script src="./script.js" defer></script>
+  <title>Frontend Mentor | Single-page design portfolio</title>
+</head>
+
+<body>
+  <header>
+    <nav class="nav">
+      <div class="nav__logo">
+        <img src="./assets/logo.svg" alt="icon logo">
+      </div>
+      <div class="nav__btn">
+        <button type="button" class="btn-consultation">Free Consultation</button>
+      </div>
+    </nav>
+  </header>
+
+  <section class="design-title">
+    <h1>Design solutions made easy</h1>
+    <p>With over ten years of experience in various design disciplines, I’m your one-stop shop for your design needs.
+    </p>
+  </section>
+
+  <section>
+    <div class="grid-container">
+      <div class="grid-container-card" id="graphic">
+        <img src="./assets/pattern-graphic-design.svg" alt="pattern-graphic-design">
+        <div class="grid-container-card-name">
+          <p>Graphic Design</p>
+        </div>
+      </div>
+
+      <div class="grid-container-card" id="UI">
+        <img src="./assets/pattern-ui-ux.svg" alt="pattern-ui-ux">
+        <div class="grid-container-card-name">
+          <p>UI/UX</p>
+        </div>
+      </div>
+
+      <div class="grid-container-card" id="apps">
+        <img src="./assets/pattern-apps.svg" alt="pattern-apps">
+        <div class="grid-container-card-name">
+          <p>Apps</p>
+        </div>
+      </div>
+
+      <div class="grid-container-card" id="photography">
+        <img src="./assets/pattern-photography.svg" alt="pattern-photography">
+        <div class="grid-container-card-name">
+          <p>Photography</p>
+        </div>
+      </div>
+
+      <div class="grid-container-card" id="illustrations">
+        <img src="./assets/pattern-illustrations.svg" alt="pattern-illustrations">
+        <div class="grid-container-card-name">
+          <p>Illustrations</p>
+        </div>
+      </div>
+
+      <div class="grid-container-card" id="motion">
+        <img src="./assets/pattern-motion-graphics.svg" alt="pattern-motion-graphics">
+        <div class="grid-container-card-name">
+          <p>Motion Graphics</p>
+        </div>
+      </div>
+
+
+
+    </div>
+  </section>
+
+  <section id="amy">
+    <div class="intro-container">
+      <div class="amy-profile">
+        <img src="./assets/image-amy.webp" alt="">
+      </div>
+
+      <div class="intro-container__content">
+        <h2>I’m Amy, and I’d love to work on your next project</h2>
+        <p>I love working with others to create beautiful design solutions. I’ve designed everything from brand
+          illustrations
+          to complete mobile apps. I’m also handy with a camera!</p>
+        <button class="btn-consultation" type="button">Free Consultation</button>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="images">
+    <div class="work">
+      <h3>My Work</h3>
+    </div>
+    <div class="image-slider-container">
+      <div class="image-slider-container__slide">
+        <img src="./assets/image-slide-5.jpg" alt="image-slide-5" id="lastClone">
+        <img src="./assets/image-slide-1.jpg" alt="image-slide-1">
+        <img src="./assets/image-slide-2.jpg" alt="image-slide-2">
+        <img src="./assets/image-slide-3.jpg" alt="image-slide-3">
+        <img src="./assets/image-slide-4.jpg" alt="image-slide-4">
+        <img src="./assets/image-slide-5.jpg" alt="image-slide-5">
+        <img src="./assets/image-slide-1.jpg" alt="image-slide-1" id="firstClone">
+      </div>
+    </div>
+
+    <div class="btn-container">
+    <button id="prevBtn"><svg width="15" height="16" xmlns="http://www.w3.org/2000/svg">
+        <path fill="#FFF" d="M8 0 0 8l8 8 1.687-1.687-5.121-5.12h10.241V6.807H4.566l5.121-5.12z" />
+      </svg></button>
+    <button id="nextBtn"><svg width="15" height="16" xmlns="http://www.w3.org/2000/svg">
+        <path fill="#FFF" d="m6.808 16 8-8-8-8-1.687 1.687 5.121 5.12H.001v2.386h10.241l-5.121 5.12z" />
+      </svg></button>
+      </div>
+  </section>
+
+  <section id="book">
+    <div class="book-content-container">
+      <div class="content">
+    <h3>Book a call with me</h3>
+    <p>I’d love to have a chat to see how I can help you. The best first step is for us to discuss your project during a
+      free consultation. Then we can move forward from there.</p>
+      </div>
+      <button class="btn-consultation">Free Consultation</button>
+      </div>
+  </section>
+
+  <nav class="nav">
+    <div class="nav__logo">
+      <img src="./assets/logo.svg" alt="icon logo">
+    </div>
+    <div class="nav__btn">
+      <button type="button" class="btn-consultation">Free Consultation</button>
+    </div>
+  </nav>
+</body>
+
+</html>

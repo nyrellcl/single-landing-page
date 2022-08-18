@@ -1,0 +1,769 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700&display=swap");
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  background-color: #F2F2F2;
+}
+
+.nav__btn .btn-consultation, .intro-container__content .btn-consultation, #book .book-content-container .btn-consultation {
+  width: 228px;
+  height: 56px;
+  border-radius: 28px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 28px;
+  border: none;
+  color: #fff;
+}
+
+.btn-container #prevBtn, .btn-container #nextBtn {
+  width: 64px;
+  height: 64px;
+  background-color: black;
+  color: #fff;
+  border-radius: 50%;
+  border: none;
+  -webkit-transition: all 250ms ease-in;
+  transition: all 250ms ease-in;
+}
+
+.btn-container #prevBtn:hover, .btn-container #nextBtn:hover {
+  background-color: #785ede;
+}
+
+.nav {
+  width: 80%;
+  margin: 34px 164px 66px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav__btn .btn-consultation {
+  background-color: #030303;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  -webkit-transition: all 250ms ease-in;
+  transition: all 250ms ease-in;
+}
+
+.nav__btn .btn-consultation:hover {
+  cursor: pointer;
+  background-color: #785ede;
+}
+
+.design-title {
+  width: 52%;
+  height: 150px;
+  text-align: center;
+  margin: 66px 344px 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 23px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.design-title h1 {
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 70.56px;
+  width: 751px;
+}
+
+.design-title p {
+  width: 730px;
+  height: 56px;
+  font-weight: 500;
+  line-height: 28px;
+  font-size: 18px;
+  color: #78736d;
+}
+
+.grid-container-card-name p {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.grid-container {
+  width: 80%;
+  display: -ms-grid;
+  display: grid;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 364px;
+  -ms-grid-columns: (0.1fr)[6];
+      grid-template-columns: repeat(6, 0.1fr);
+  grid-gap: 24px;
+  -ms-grid-rows: (0.3fr)[2];
+      grid-template-rows: repeat(2, 0.3fr);
+      grid-template-areas: "graphic graphic UI apps photography photography" "graphic graphic illustrations illustrations motion motion";
+  margin: 80px 165px 136px;
+  color: #fff;
+}
+
+.grid-container #graphic {
+  background-color: #785ede;
+  border-radius: 8px;
+  width: 354px;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: graphic;
+  position: relative;
+  height: 364px;
+}
+
+.grid-container #graphic img {
+  position: absolute;
+  width: auto;
+  height: auto;
+  left: 202px;
+  top: 24px;
+  right: 24px;
+  bottom: 148px;
+}
+
+.grid-container #graphic .grid-container-card-name {
+  position: absolute;
+  left: 24px;
+  bottom: 24px;
+  right: 120px;
+  top: 310px;
+}
+
+.grid-container #UI {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: UI;
+  width: 164px;
+  height: 182px;
+  background-color: #f6a660;
+  border-radius: 8px;
+  position: relative;
+}
+
+.grid-container #UI img {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  bottom: 94px;
+  left: 76px;
+}
+
+.grid-container #UI .grid-container-card-name {
+  position: absolute;
+  left: 24px;
+  bottom: 24px;
+  right: 58px;
+  top: 128px;
+}
+
+.grid-container #apps {
+  -ms-grid-row: 1;
+  -ms-grid-column: 4;
+  grid-area: apps;
+  width: 164px;
+  height: 182px;
+  background-color: #f3a0a0;
+  border: 8px;
+  position: relative;
+  border-radius: 8px;
+}
+
+.grid-container #apps img {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  bottom: 94px;
+  left: 76px;
+}
+
+.grid-container #apps .grid-container-card-name {
+  position: absolute;
+  left: 24px;
+  bottom: 24px;
+  right: 58px;
+  top: 128px;
+}
+
+.grid-container #photography {
+  -ms-grid-row: 1;
+  -ms-grid-column: 5;
+  -ms-grid-column-span: 2;
+  grid-area: photography;
+  width: 354px;
+  height: 182px;
+  background-color: #5fc4b6;
+  border-radius: 8px;
+  position: relative;
+}
+
+.grid-container #photography img {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  left: 170px;
+  bottom: 94px;
+}
+
+.grid-container #photography .grid-container-card-name {
+  position: absolute;
+  left: 24px;
+  bottom: 24px;
+  right: 58px;
+  top: 128px;
+}
+
+.grid-container #illustrations {
+  -ms-grid-row: 2;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 2;
+  grid-area: illustrations;
+  width: 354px;
+  height: 158px;
+  background-color: #eb7566;
+  border-radius: 8px;
+  position: relative;
+}
+
+.grid-container #illustrations img {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  bottom: 70px;
+  left: 200px;
+}
+
+.grid-container #illustrations .grid-container-card-name {
+  position: absolute;
+  left: 24px;
+  bottom: 24px;
+  right: 168px;
+  top: 104px;
+}
+
+.grid-container #motion {
+  -ms-grid-row: 2;
+  -ms-grid-column: 5;
+  -ms-grid-column-span: 2;
+  grid-area: motion;
+  width: 354px;
+  height: 158px;
+  background-color: #552049;
+  border-radius: 8px;
+  position: relative;
+}
+
+.grid-container #motion img {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  bottom: 70px;
+  left: 202px;
+}
+
+.grid-container #motion .grid-container-card-name {
+  position: absolute;
+  left: 24px;
+  bottom: 24px;
+  right: 103px;
+  top: 104px;
+}
+
+.intro-container {
+  width: 80%;
+  margin: 136px 165px 88px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 125px;
+}
+
+.intro-container .amy-profile img {
+  width: 445px;
+  height: 445px;
+}
+
+.intro-container__content {
+  width: 540px;
+  height: 306px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 34px;
+}
+
+.intro-container__content h2 {
+  height: 100px;
+  font-size: 40px;
+  font-weight: 700;
+  color: #030303;
+  line-height: 50px;
+}
+
+.intro-container__content p {
+  height: 84px;
+  font-size: 18px;
+  line-height: 28px;
+  color: #78736d;
+}
+
+.intro-container__content .btn-consultation {
+  background-color: #eb7566;
+  -webkit-transition: all 250ms ease-in;
+  transition: all 250ms ease-in;
+}
+
+.intro-container__content .btn-consultation:hover {
+  cursor: pointer;
+  background-color: #785ede;
+}
+
+.work {
+  margin: 0 auto 56px;
+  text-align: center;
+  width: 50%;
+  height: 40px;
+  font-size: 32px;
+  color: #030303;
+  font-weight: 700;
+}
+
+.image-slider-container {
+  width: 100%;
+  margin: auto;
+  overflow: hidden;
+  height: auto;
+}
+
+.image-slider-container__slide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  gap: 30px;
+}
+
+.image-slider-container__slide img {
+  border-radius: 8px;
+}
+
+#book .book-content-container {
+  width: 80%;
+  margin: 88px 165px 56px;
+  height: 320px;
+  border-radius: 10px;
+  background-color: #030303;
+  color: #fff7f0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+#book .book-content-container .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 25px;
+}
+
+#book .book-content-container .content h3 {
+  width: 540px;
+  height: 50px;
+  font-size: 40px;
+  font-weight: 700;
+}
+
+#book .book-content-container .content p {
+  width: 540px;
+  height: 84px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 28px;
+}
+
+#book .book-content-container .btn-consultation {
+  background-color: #eb7566;
+  -webkit-transition: all 250ms ease-in;
+  transition: all 250ms ease-in;
+}
+
+#book .book-content-container .btn-consultation:hover {
+  cursor: pointer;
+  background-color: #f6a660;
+}
+
+.btn-container {
+  position: relative;
+  width: 144px;
+  height: 64px;
+  margin: 0 auto;
+}
+
+.btn-container #prevBtn {
+  position: absolute;
+  top: 50%;
+  z-index: 10;
+  left: 0;
+  cursor: pointer;
+}
+
+.btn-container #nextBtn {
+  position: absolute;
+  top: 50%;
+  z-index: 10;
+  right: 0;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .nav {
+    width: 90%;
+    margin: 34px 40px 64px;
+  }
+  .design-title {
+    width: 90%;
+    height: 138px;
+    margin: 64px 40px;
+  }
+  .design-title h1 {
+    width: inherit;
+    height: 55px;
+    font-size: 44px;
+  }
+  .design-title p {
+    width: 573px;
+    height: 56px;
+  }
+  .grid-container {
+    height: auto;
+    -ms-grid-columns: (1fr)[4];
+        grid-template-columns: repeat(4, 1fr);
+    -ms-grid-rows: (0.5fr)[3];
+        grid-template-rows: repeat(3, 0.5fr);
+        grid-template-areas: "graphic graphic UI apps" "graphic graphic illustrations illustrations" "photography photography motion motion";
+    width: 690px;
+    margin: 64px 39px 120px;
+  }
+  .grid-container #graphic {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: graphic;
+    width: 333px;
+  }
+  .grid-container #graphic img {
+    left: 181px;
+  }
+  .grid-container #UI {
+    -ms-grid-row: 1;
+    -ms-grid-column: 3;
+    grid-area: UI;
+    width: 154px;
+    height: 182px img;
+    height-left: 69px;
+  }
+  .grid-container #apps {
+    -ms-grid-row: 1;
+    -ms-grid-column: 4;
+    grid-area: apps;
+    width: 154px;
+    height: 182px img;
+    height-left: 69px;
+  }
+  .grid-container #illustrations {
+    -ms-grid-row: 2;
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 2;
+    grid-area: illustrations;
+    width: auto;
+    height: 158px;
+  }
+  .grid-container #illustrations img {
+    left: 186px;
+  }
+  .grid-container #photography {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: photography;
+    width: 333px;
+    height: 182px;
+  }
+  .grid-container #photography img {
+    left: 149px;
+  }
+  .grid-container #motion {
+    -ms-grid-row: 3;
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 2;
+    grid-area: motion;
+    width: auto;
+    height: 182px;
+  }
+  .grid-container #motion img {
+    left: 181px;
+    top: 24px;
+    right: 24px;
+  }
+  .grid-container #motion .grid-container-card-name {
+    top: 128px;
+  }
+  .intro-container {
+    width: 90%;
+    margin: 120px 40px;
+    gap: 69px;
+  }
+  .intro-container .amy-profile img {
+    width: 364px;
+    height: 364px;
+  }
+  .intro-container__content {
+    width: 339px;
+    height: auto;
+    gap: 24px;
+  }
+  .intro-container__content h2 {
+    width: 339px;
+    height: 120px;
+    font-size: 32px;
+    margin-bottom: 24px;
+  }
+  .intro-container__content p {
+    width: 339px;
+    height: 140px;
+  }
+  .intro-container__content .btn-consultation {
+    height: 56px;
+  }
+  #book .book-content-container {
+    width: 90%;
+    margin: 120px 39px 56px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+  }
+  #book .book-content-container .content h3 {
+    font-size: 32px;
+    width: 540px;
+    height: 40px;
+  }
+  #book .book-content-container .content p {
+    width: 540px;
+    height: 84px;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .nav {
+    width: 90%;
+    margin: 16px auto 32px;
+  }
+  .design-title {
+    width: 90%;
+    text-align: center;
+    height: 210px;
+    margin: 32px auto;
+  }
+  .design-title h1 {
+    width: 90%;
+    font-size: 36px;
+    line-height: 45.36px;
+    margin-bottom: 16px;
+  }
+  .design-title p {
+    width: 285px;
+    font-size: 16px;
+    line-height: 26px;
+    height: 104px;
+  }
+  .grid-container {
+    width: 343px;
+    margin: 0 auto;
+    height: auto;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    -ms-grid-rows: (0.5fr)[6];
+        grid-template-rows: repeat(6, 0.5fr);
+        grid-template-areas: "graphic graphic" "graphic graphic" "UI apps" "illustrations illustrations" "photography photography" "motion motion";
+  }
+  .grid-container #graphic {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: graphic;
+    width: auto;
+    height: 364px;
+  }
+  .grid-container #UI {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    grid-area: UI;
+    width: 159px;
+    height: 182px;
+  }
+  .grid-container #apps {
+    -ms-grid-row: 3;
+    -ms-grid-column: 2;
+    grid-area: apps;
+    width: 159px;
+    height: 182px;
+  }
+  .grid-container #photography {
+    -ms-grid-row: 5;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: photography;
+    width: 343px;
+    height: 158px;
+  }
+  .grid-container #photography .grid-container-card-name {
+    top: 104px;
+  }
+  .grid-container #illustrations {
+    -ms-grid-row: 4;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: illustrations;
+    width: 343px;
+    height: 158px;
+  }
+  .grid-container #motion {
+    -ms-grid-row: 6;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: motion;
+    width: 343px;
+    height: 158px;
+  }
+  .grid-container #motion .grid-container-card-name {
+    top: 104px;
+  }
+  .intro-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 100px auto;
+    text-align: center;
+    gap: 40px;
+  }
+  .intro-container .amy-profile img {
+    width: 300px;
+    height: 300px;
+  }
+  .intro-container__content {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .intro-container__content h2 {
+    font-size: 26px;
+    height: 66px;
+    line-height: 32.76px;
+    width: 343px;
+  }
+  .intro-container__content p {
+    height: 104px;
+    font-size: 16px;
+    width: 343px;
+  }
+  .work h3 {
+    width: 102px;
+    height: 30px;
+    font-size: 24px;
+    margin: 0 auto;
+  }
+  .image-slider-container {
+    width: 90%;
+  }
+  #book .book-content-container {
+    width: 90%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 100px 17px 40px;
+    height: auto;
+  }
+  #book .book-content-container .content {
+    width: 295px;
+    height: 255px;
+    text-align: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #book .book-content-container .content h3 {
+    width: 240px;
+    height: 33px;
+    font-size: 26px;
+    margin: 0 auto;
+  }
+  #book .book-content-container .content p {
+    width: 295px;
+    height: 130px;
+  }
+  #book .book-content-container .btn-consultation {
+    margin: 24px 84px 48px;
+  }
+}
+/*# sourceMappingURL=styles.css.map */
